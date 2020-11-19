@@ -3,7 +3,7 @@
 这是基于 PyTorch 实现的一个简易版 RetinaFace。包含目标检测和关键点检测的部分，Mesh Decoder 部分没有实现。
 
 代码中， prior 和 gt 匹配的 match 函数有一些些小缺陷，但只要 anchor 设计得合理就不会有问题，具体可以看代码 [match](./utils/match.py)。
-RetinaFace中的人脸关键点是5个，分别为双眼、鼻尖和2个嘴角，而这里实现的RetinaFace是本人用于车牌检测的，所以只用了4个关键点。为了扩展其通用性，如果需要该关键点数量，只需修改config文件夹下相应的config中的"num_landmark_points"即可。
+RetinaFace中的人脸关键点是5个，分别为双眼、鼻尖和2个嘴角，而这里实现的RetinaFace是本人用于车牌检测的，所以只用了4个关键点。为了扩展其通用性，如果需要改变关键点数量，只需修改config文件夹下相应的config中的"num_landmark_points"即可。
 
 ### 目录
 1. [训练步骤与使用方法](#训练步骤与使用方法)
